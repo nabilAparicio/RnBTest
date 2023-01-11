@@ -1,0 +1,69 @@
+.buttonContainer{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 7px 10px;
+gap: 10px;
+
+width: 87px;
+height: 37px;
+
+background: linear-gradient(99.18deg, #006EF2 3.48%, #01AEFA 100.31%);
+border-radius: 8px;
+}
+.buttonPortal{
+width: 45px;
+height: 25px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 25px;
+
+/* identical to box height, or 147% */
+text-align: center;
+
+color: #FFFFFF;
+}
+.header{
+display: flex;
+flex-direction:column;
+align-items: center;
+padding: 20px 0px 0px;
+gap: 20px;
+background: #FFFFFF;
+border: 2px solid rgba(255, 255, 255, 0.1);
+height: 75px;
+}
+.navbar{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px 40px;
+gap: 183px;
+height: 34px;
+}
+.navLinksContainer{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 70px;
+width: max-content;
+height: 25px;
+}
+.navLinks{
+height: 100%;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+
+/* identical to box height, or 147% */
+
+color: rgba(48, 70, 89, 0.8);
+}
