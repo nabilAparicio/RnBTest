@@ -1,0 +1,21 @@
+.mainContainer{
+  place-content: center;
+  padding-inline: 100px;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 29px;
+}
+.verMasContainer{
+  display: flex;
+  place-content: center;
+  margin-block: 60px;
+}
+.verMas{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+color: #006EF2;
+}
