@@ -77,11 +77,11 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.info}>
-          <Image width={15.76} height={20} alt="GPS Logo" src={PhoneLogo} />
+          <Image width={19.96} height={20} alt="Phone Logo" src={PhoneLogo} />
           <div className={styles.infoContent}>+507 787-0022</div>
         </div>
         <div className={styles.info}>
-          <Image width={15.76} height={20} alt="GPS Logo" src={MailLogo} />
+          <Image width={21.33} height={15} alt="Mail Logo" src={MailLogo} />
           <div className={styles.infoContent}>info@rednbluepty.com</div>
         </div>
       </div>
