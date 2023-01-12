@@ -18,6 +18,9 @@ export default function Home() {
       </Head>
       <Header />
       <Cover />
+      <br></br>
+      <br></br>
+      <br></br>
       <Footer />
     </>
   );

@@ -1,3 +1,106 @@
-.prueba{
-  background-color: red;
+.footerContainer{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 539px;
+gap: 60px;
+
+/* Gradient */
+background: linear-gradient(87.99deg, #006EF2 3.65%, #01AEFA 121.61%);
+}
+.siteMap{
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+}
+.suggestionCard{
+max-width: 359px;
+height: 233px;
+display: flex;
+flex-direction: column;
+gap: 19px;
+padding: 22px;
+background-color: #ffffff23;
+border-radius: 8px;
+}
+.suggestionCardP{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+
+color: #FFFFFF;
+}
+.linksContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footerLinks{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 25px;
+
+/* identical to box height, or 147% */
+
+/* Blanco */
+color: #FFFFFF;
+}
+.suggestionCardP{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+}
+.input{
+color: #8298AB;
+min-width: 315px;
+height: 49px;
+border: none;
+padding: 15px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+}
+.infoContainer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 130px;
+  height: 60px;
+  min-width: 1140px;
+  padding: 20px;
+  background-color: #ffffff23;
+  border-radius: 20px;
+}
+.info{
+  display: flex;
+  gap: 10px;
+}
+.infoContent{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 20px;
+color: #FFFFFF;
+}
+.logoCopyrigth{
+display: flex;
+min-width: 1140px;
+justify-content: space-between;
+}
+.Copyrigth{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+color: #FFFFFF;
+opacity: 0.3;
 }
