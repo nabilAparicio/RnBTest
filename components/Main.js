@@ -8,18 +8,19 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 const Main = () => {
   const Search = useSelector((state) => state.SearchSlice);
-  const istrue = Pages.filter((Page) =>
+  const notFound = Pages.filter((Page) =>
     Page.name.toLowerCase().includes(Search.search)
   );
-  console.log(istrue);
   return (
     <>
       <div className={styles.mainContainer}>
-        {Pages.filter((Page) =>
-          Page.name.toLowerCase().includes(Search.search)
-        ).map((Page) => (
-          <MainCard Page={Page} key={Page.id} />
-        ))}
+        {notFound.length === 0 ? (
+          <div>Pagina no encontrada lo siento :c</div>
+        ) : (
+          Pages.filter((Page) =>
+            Page.name.toLowerCase().includes(Search.search)
+          ).map((Page) => <MainCard Page={Page} key={Page.id} />)
+        )}
       </div>
       <div className={styles.verMasContainer}>
         <Link href={"/"} className={styles.verMas}>
