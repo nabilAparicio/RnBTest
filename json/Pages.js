@@ -96,7 +96,11 @@ export const Pages = [
     site: "adidas.com",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem eaque, consequuntur dolores fuga alias perferendis sit, itaque",
-    image: "/assets/Logos/Adidas.png",
+    image: {
+      url: "/assets/Logos/Adidas.png",
+      width: 100,
+      height: 102.89,
+    },
     categories: ["Deporte", "Atletico", "Zapatillas"],
   },
   {
@@ -144,7 +148,11 @@ export const Pages = [
     site: "adidas.com",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem eaque, consequuntur dolores fuga alias perferendis sit, itaque",
-    image: "/assets/Logos/Adidas.png",
+    image: {
+      url: "/assets/Logos/Adidas.png",
+      width: 100,
+      height: 102.89,
+    },
     categories: ["Deporte", "Atletico", "Zapatillas"],
   },
 ];

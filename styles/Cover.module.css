@@ -55,8 +55,14 @@ position: absolute;
 top: 12px;
 left: 23px;
 }
+.searchIcon:hover{
+  cursor: pointer;
+}
 .crossIcon{
 position: absolute;
 top: 12px;
 left: 734px;
+}
+.crossIcon:hover{
+  cursor: pointer;
 }

@@ -14,7 +14,6 @@ const Footer = () => {
   const { register, handleSubmit, watch } = useForm();
   const onSubmit = (data) => console.log(data);
 
-  console.log(watch("example")); // watch input value by passing the name of it
   return (
     <div className={styles.footerContainer}>
       <div className={styles.siteMap}>
