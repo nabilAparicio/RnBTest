@@ -31,10 +31,10 @@ const MainCard = ({ Page }) => {
         <h2 className={styles.PageName}>{Page.name}</h2>
         <p className={styles.Website}>{Page.site}</p>
         <div className={styles.Links}>
-          <Link className={styles.sigleLink} href={"/"}>
+          <Link className={styles.verInfo} href={"/"}>
             {"ver info >"}
           </Link>
-          <Link className={styles.sigleLink} href={"/"}>
+          <Link className={styles.verOfertas} href={"/"}>
             {"ver ofertas >"}
           </Link>
         </div>

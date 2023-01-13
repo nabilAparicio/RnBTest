@@ -1,4 +1,5 @@
 .coverContainer{
+padding-inline: 16px;
 margin-top: 75px;
 width: 100%;
 height: 354.1px;
@@ -9,6 +10,9 @@ justify-content: center;
 align-items: center;
 text-align: center;
 background: linear-gradient(87.99deg, #006EF2 3.65%, #01AEFA 121.61%);
+}
+.mobileBackGroundImage{
+  display: none;
 }
 .BackGroundImage{
 position: absolute;
@@ -37,32 +41,91 @@ font-style: normal;
 font-size: 20px;
 }
 .searchContainer{
-  min-width: 784px;
-  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 784px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  background-color: white;
+}
+.Form{
+  width: 100%;
 }
 .input{
+  z-index: 10;
+  border-radius: 10px;
   font-size: 20px;
-  padding-inline: 72px;
   color: #8298AB;
   width: 100%;
   height: 50px;
   border: none;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 .searchIcon{
-position: absolute;
-top: 12px;
-left: 23px;
+  margin-inline: 23px;
+}
+.crossIcon{
+  margin-inline: 23px;
 }
 .searchIcon:hover{
   cursor: pointer;
 }
-.crossIcon{
-position: absolute;
-top: 12px;
-left: 734px;
-}
 .crossIcon:hover{
   cursor: pointer;
+}
+@media (max-width:540px) {
+  .mobileBackGroundImage{
+  top: 1px;
+  display: block;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+      from(rgba(0,0,0,0.9)), to(rgba(0,0,0,0)));
+}
+  .BackGroundImage{
+    display: none;
+  position: absolute;
+  z-index: 0;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+      from(rgba(0,0,0,0.9)), to(rgba(0,0,0,0)));
+  }
+  .coverContainer{
+  position: relative;
+  padding-inline: 16px;
+  padding-block-end: 80px;
+  margin-top: 75px;
+  width: 100%;
+  height: 635.1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: left;
+  background-color: linear-gradient(87.99deg, #006EF2 3.65%, #01AEFA 121.61%);
+}
+.titleContainer{
+z-index: 1;
+max-width: 784px;
+display: flex;
+flex-direction: column;
+gap: 0rem;
+}
+  .searchContainer{
+  position: absolute;
+  bottom: -20px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  height: 50px;
+  max-width: 784px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  background-color: white;
+}
 }

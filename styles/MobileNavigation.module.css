@@ -1,0 +1,17 @@
+.navLinksContainer{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+justify-content: space-evenly;
+width: 100%;
+height: 25px;
+}
+.navLinks{
+height: 100%;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+color: rgba(48, 70, 89, 0.8);
+}

@@ -5,33 +5,28 @@ justify-content: center;
 align-items: center;
 padding: 7px 10px;
 gap: 10px;
-
 width: 87px;
 height: 37px;
-
 background: linear-gradient(99.18deg, #006EF2 3.48%, #01AEFA 100.31%);
 border-radius: 8px;
 }
 .buttonPortal{
 width: 45px;
 height: 25px;
-
 font-family: 'Lato';
 font-style: normal;
 font-weight: 600;
 font-size: 17px;
 line-height: 25px;
-
-/* identical to box height, or 147% */
 text-align: center;
-
 color: #FFFFFF;
 }
 .header{
 position: fixed;
-z-index: 10;
+z-index: 20;
 display: flex;
 flex-direction:column;
+justify-content: center;
 align-items: center;
 padding: 20px 0px 0px;
 background: #FFFFFF;
@@ -40,7 +35,6 @@ height: 75px;
 overflow: hidden;
 top: 0;
 width: 100%;
-max-width: 1440px;
 }
 .navbar{
 display: flex;
@@ -51,8 +45,8 @@ padding: 0px 40px;
 width: 100%;
 max-width: 1440px;
 }
-.navLinksContainer{
-  display: flex;
+.navigation{
+display: flex;
 flex-direction: row;
 align-items: center;
 padding: 0px;
@@ -60,15 +54,24 @@ justify-content: space-evenly;
 width: 100%;
 height: 25px;
 }
-.navLinks{
-height: 100%;
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 700;
-font-size: 17px;
-
-/* identical to box height, or 147% */
-
-color: rgba(48, 70, 89, 0.8);
+.mobileNavigation{
+display: none;
+}
+@media (max-width:990px){
+  .navigation{
+    display: none;
+  }
+  .buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .mobileNavigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    justify-content: flex-end;
+    height: 25px;
+  }
 }

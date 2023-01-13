@@ -15,7 +15,13 @@ const Main = () => {
     <>
       <div className={styles.mainContainer}>
         {notFound.length === 0 ? (
-          <div>Pagina no encontrada lo siento :c</div>
+          <>
+            <div className={styles.notFound}>
+              Pagina no encontrada lo siento :c
+            </div>
+            <Skeleton />
+            <Skeleton count={5} />
+          </>
         ) : (
           Pages.filter((Page) =>
             Page.name.toLowerCase().includes(Search.search)

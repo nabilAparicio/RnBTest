@@ -8,6 +8,8 @@ import { setSearch } from "../store/slice/Search.slice";
 import SearchIcon from "../public/assets/icons/search.png";
 import CrossIcon from "../public/assets/icons/cross.png";
 import BackGround from "../public/assets/logosburbujas.png";
+import MobileBackGround from "../public/assets/bgMobile.png";
+import VectorMobileBackGround from "../public/assets/Vector(5).png";
 const Cover = () => {
   const dispatch = useDispatch();
 
@@ -22,6 +24,16 @@ const Cover = () => {
         alt="Background image"
         src={BackGround}
       />
+      <Image
+        className={styles.mobileBackGroundImage}
+        alt="Background image"
+        src={MobileBackGround}
+      />
+      <Image
+        className={styles.mobileBackGroundImage}
+        alt="Background image"
+        src={VectorMobileBackGround}
+      />
       <div className={styles.titleContainer}>
         <h2 className={styles.title}>Tiendas con las que trabajamos</h2>
         <p className={styles.description}>
@@ -31,31 +43,26 @@ const Cover = () => {
         </p>
       </div>
       <div className={styles.searchContainer}>
+        <div onClick={handleSubmit(onSubmit)} className={styles.searchIcon}>
+          <Image width={25} height={25.5} alt="search" src={SearchIcon}></Image>
+        </div>
         <form
           className={styles.Form}
           onLoad={handleSubmit(onSubmit)}
           onChange={handleSubmit(onSubmit)}
         >
-          <div onClick={handleSubmit(onSubmit)} className={styles.searchIcon}>
-            <Image
-              width={25}
-              height={25.5}
-              alt="search"
-              src={SearchIcon}
-            ></Image>
-          </div>
-          <div
-            onClick={() => setdefaultFormValue("")}
-            className={styles.crossIcon}
-          >
-            <Image width={25} height={25.5} alt="cross" src={CrossIcon}></Image>
-          </div>
           <input
             className={styles.input}
             placeholder={defaultFormValue}
             {...register("search")}
           />
         </form>
+        <div
+          onClick={() => setdefaultFormValue("")}
+          className={styles.crossIcon}
+        >
+          <Image width={25} height={25.5} alt="cross" src={CrossIcon}></Image>
+        </div>
       </div>
     </div>
   );

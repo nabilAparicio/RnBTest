@@ -1,11 +1,19 @@
 .mainContainer{
+  margin: 0 auto;
   place-content: center;
   padding-inline: 100px;
   margin-top: 50px;
   width: 100%;
+  max-width: 1340px;
   display: flex;
   flex-wrap: wrap;
   gap: 29px;
+}
+.notFound{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
 }
 .verMasContainer{
   display: flex;
@@ -18,4 +26,17 @@ font-style: normal;
 font-weight: 700;
 font-size: 25px;
 color: #006EF2;
+}
+@media (max-width:1047px){
+  .mainContainer{
+  margin: 0 auto;
+  place-content: center;
+  padding-inline: 0px;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1340px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 29px;
+}
 }

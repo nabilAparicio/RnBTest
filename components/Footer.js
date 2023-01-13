@@ -9,6 +9,8 @@ import MailLogo from "../public/assets/icons/Vectormail.png";
 import PhoneLogo from "../public/assets/icons/Vectorphone.png";
 import RnBLogoFooter from "../public/assets/RednBlueLogoFooter.png";
 import ToTop from "../public/assets/icons/Vectortop.png";
+import Facebook from "../public/assets/icons/Facebookicon.png";
+import Instagram from "../public/assets/icons/Instagramicon.png";
 
 const Footer = () => {
   const { register, handleSubmit, watch } = useForm();
@@ -35,38 +37,65 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <ul className={styles.linksContainer}>
-          <Link className={styles.footerLinks} href="/">
-            Nosotros
-          </Link>
-          <Link className={styles.footerLinks} href="/">
-            Servicios
-          </Link>
-          <Link className={styles.footerLinks} href="/">
-            Contactanos
-          </Link>
-          <Link className={styles.footerLinks} href="/">
-            Registro
-          </Link>
-          <Link className={styles.footerLinks} href="/">
-            Portal
-          </Link>
-        </ul>
-        <ul className={styles.linksContainer}>
-          <Link className={styles.footerLinks} href="/">
-            Preguntas frecuentes
-          </Link>
-          <Link className={styles.footerLinks} href="/">
-            Ventajas de comprar por internet
-          </Link>
-          <Link className={styles.footerLinks} href="/">
-            RednBlue Logistics
-          </Link>
-          <Link className={styles.footerLinks} href="/">
-            Soporte tecnico
-          </Link>
-        </ul>
-        <Image height={49} width={49} alt="to top" src={ToTop} />
+        <div className={styles.toTopContainer}>
+          <Image
+            className={styles.toTop}
+            height={49}
+            width={49}
+            alt="to top"
+            src={ToTop}
+          />
+          <Image
+            className={styles.social}
+            height={49}
+            width={49}
+            alt="Facebook"
+            src={Facebook}
+          />
+          <Image
+            className={styles.social}
+            height={49}
+            width={49}
+            alt="Instagram"
+            src={Instagram}
+          />
+        </div>
+
+        <div className={styles.linksMainContainer}>
+          <ul className={styles.linksContainer}>
+            <Link className={styles.footerLinks} href="/">
+              Nosotros
+            </Link>
+            <Link className={styles.footerLinks} href="/">
+              Servicios
+            </Link>
+            <Link className={styles.footerLinks} href="/">
+              Contactanos
+            </Link>
+            <Link className={styles.footerLinks} href="/">
+              Registro
+            </Link>
+            <Link className={styles.footerLinks} href="/">
+              Portal
+            </Link>
+          </ul>
+          <ul className={styles.linksContainer}>
+            <Link className={styles.footerLinks} href="/">
+              Preguntas frecuentes
+            </Link>
+            <Link className={styles.footerLinksVentajas} href="/">
+              Ventajas de comprar por internet
+            </Link>
+            <Link className={styles.footerLinks} href="/">
+              RednBlue Logistics
+            </Link>
+            <Link className={styles.footerLinks} href="/">
+              Soporte tecnico
+            </Link>
+          </ul>
+        </div>
+
+        <div className={styles.lineDeco}></div>
       </div>
       <div className={styles.infoContainer}>
         <div className={styles.info}>
