@@ -8,8 +8,8 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 const Main = () => {
   const Search = useSelector((state) => state.SearchSlice);
-  const notFound = Pages.filter((Page) =>
-    Page.name.toLowerCase().includes(Search.search)
+  let notFound = Pages.filter((Page) =>
+    Page.name.toLowerCase().includes(Search.search && "")
   );
   return (
     <>
@@ -24,7 +24,7 @@ const Main = () => {
           </>
         ) : (
           Pages.filter((Page) =>
-            Page.name.toLowerCase().includes(Search.search)
+            Page.name.toLowerCase().includes(Search.search && "")
           ).map((Page) => <MainCard Page={Page} key={Page.id} />)
         )}
       </div>

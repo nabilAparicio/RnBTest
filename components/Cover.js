@@ -46,11 +46,7 @@ const Cover = () => {
         <div onClick={handleSubmit(onSubmit)} className={styles.searchIcon}>
           <Image width={25} height={25.5} alt="search" src={SearchIcon}></Image>
         </div>
-        <form
-          className={styles.Form}
-          onLoad={handleSubmit(onSubmit)}
-          onChange={handleSubmit(onSubmit)}
-        >
+        <form className={styles.Form} onChange={handleSubmit(onSubmit)}>
           <input
             className={styles.input}
             placeholder={defaultFormValue}
