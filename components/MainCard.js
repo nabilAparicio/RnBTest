@@ -3,14 +3,20 @@ import Image from "next/image";
 import Link from "next/link";
 const MainCard = ({ Page }) => {
   return (
-    <div>
+    <div className={styles.allCardContainer}>
       <div className={styles.imageContainer}>
         <ul className={styles.categoriesContainer}>
-          {Page.categories.map((category) => (
-            <li className={styles.category} key={category}>
-              {category}
-            </li>
-          ))}
+          {Page.categories.map((category) =>
+            category === "Popular" ? (
+              <li className={styles.popularCategory} key={category}>
+                {"⭐ " + category}
+              </li>
+            ) : (
+              <li className={styles.category} key={category}>
+                {category}
+              </li>
+            )
+          )}
         </ul>
         <Image
           className={styles.cardImage}
@@ -19,6 +25,7 @@ const MainCard = ({ Page }) => {
           alt={Page.name}
           src={Page.image.url}
         />
+        <p className={styles.storeDescription}>{Page.description}</p>
       </div>
       <div className={styles.infoContainer}>
         <h2 className={styles.PageName}>{Page.name}</h2>
