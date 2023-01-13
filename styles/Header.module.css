@@ -36,6 +36,10 @@ overflow: hidden;
 top: 0;
 width: 100%;
 }
+.RNBLogo{
+  width: 100%;
+  height: auto;
+}
 .navbar{
 display: flex;
 flex-direction: row;
@@ -62,6 +66,7 @@ display: none;
     display: none;
   }
   .buttons{
+    margin-left: 10px;
     display: flex;
     align-items: center;
     gap: 20px;

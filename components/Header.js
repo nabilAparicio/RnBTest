@@ -11,7 +11,7 @@ const Header = () => {
     <header className={styles.header}>
       <nav className={styles.navbar}>
         <div>
-          <Image width={217.91} height={40} alt="RNB Logo" src={RNBlogo} />
+          <Image className={styles.RNBLogo} alt="RNB Logo" src={RNBlogo} />
         </div>
         <div className={styles.navigation}>
           <Navigation />
