@@ -21,7 +21,13 @@ const Footer = () => {
       <div className={styles.siteMap}>
         <div className={styles.suggestionCard}>
           <div>
-            <Image height={49.97} width={49.97} alt="logo footer" src={Logo} />
+            <Image
+              className={styles.sugestionRNBLogo}
+              height="auto"
+              width={49.97}
+              alt="logo footer"
+              src={Logo}
+            />
           </div>
           <p className={styles.suggestionCardP}>
             Somos una Familia en constante crecimiento y mejora, agradecemos su

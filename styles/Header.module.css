@@ -79,4 +79,17 @@ display: none;
     justify-content: flex-end;
     height: 25px;
   }
+  .RNBLogo{
+  width: 90%;
+  height: auto;
+}
+  .navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 9px;
+  width: 100%;
+  max-width: 1440px;
+}
 }
