@@ -148,6 +148,13 @@ display: flex;
 gap: 5px;
 flex-wrap: wrap;
 }
+.cardImage{
+  width: 40%;
+  height: auto;
+margin: auto 0;
+align-self: center;
+height: auto;
+}
 .popularCategory{
   color: #E1E9F0;
 font-family: 'Lato';
